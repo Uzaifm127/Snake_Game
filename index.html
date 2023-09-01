@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+
+    <!-- Production -->
+    <link
+      rel="shortcut icon"
+      href="/Snake_Game/Img/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- Development -->
+    <!-- <link rel="shortcut icon" href="/Img/favicon.ico" type="image/x-icon" />  -->
+
+    <!-- Production -->
+    <link rel="stylesheet" href="/Snake_Game/CSS/style.css" />
+
+    <!-- Development -->
+    <!-- <link rel="stylesheet" href="/CSS/style.css" /> -->
+  </head>
+  <body>
+    <div id="start-screen">
+      <button id="start-btn">Start Game</button>
+      <select id="select-difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+    <div id="game-container">
+      <div id="controller">
+        <!-- Production -->
+        <button type="button" id="right" class="control-btn">
+          <img src="/Snake_Game/Img/left.png" alt="left" />
+        </button>
+        <button type="button" id="left" class="control-btn">
+          <img src="/Snake_Game/Img/right.png" alt="right" />
+        </button>
+        <button type="button" id="up" class="control-btn">
+          <img src="/Snake_Game/Img/up.png" alt="up" />
+        </button>
+        <button type="button" id="down" class="control-btn">
+          <img src="/Snake_Game/Img/down.png" alt="down" />
+        </button>
+
+        <!-- Development -->
+
+        <!-- <button type="button" id="right" class="control-btn">
+          <img src="/Img/left.png" alt="left" />
+        </button>
+        <button type="button" id="left" class="control-btn">
+          <img src="/Img/right.png" alt="right" />
+        </button>
+        <button type="button" id="up" class="control-btn">
+          <img src="/Img/up.png" alt="up" />
+        </button>
+        <button type="button" id="down" class="control-btn">
+          <img src="/Img/down.png" alt="down" />
+        </button> -->
+      </div>
+      <div id="score">Score : <span id="score-value">0</span></div>
+      <canvas id="canvas"></canvas>
+    </div>
+    <div id="audio-container">
+      <!-- Production -->
+      <audio
+        id="background-music"
+        src="/Snake_Game/Music/background.mp3"
+        loop
+      ></audio>
+      <audio id="gameover-music" src="/Snake_Game/Music/gameover.mp3"></audio>
+      <audio id="move-music" src="/Snake_Game/Music/move.mp3"></audio>
+      <audio id="eat-music" src="/Snake_Game/Music/eat.mp3"></audio>
+
+      <!-- Development -->
+      <!-- <audio id="background-music" src="/Music/background.mp3" loop></audio>
+      <audio id="gameover-music" src="/Music/gameover.mp3"></audio>
+      <audio id="move-music" src="/Music/move.mp3"></audio>
+      <audio id="eat-music" src="/Music/eat.mp3"></audio> -->
+    </div>
+    <!-- Production -->
+    <script src="/Snake_Game/JS/index.js"></script>
+    <!-- Development -->
+    <!-- <script src="/JS/index.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /* Production */
+  background: url(/Snake_Game/Img/bg.1.jpg);
+  /* Development */
+  /* background: url(/Img/bg.1.jpg); */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#start-screen {
+  width: 55rem;
+  height: 36rem;
+  position: absolute;
+  background: #ffec8f;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.5s ease;
+  opacity: 1;
+  z-index: 1;
+}
+
+#start-btn {
+  border: none;
+  outline: none;
+  background: #ff6767;
+  color: #681818;
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+#select-difficulty {
+  border: none;
+  outline: none;
+  background: #ff8d8d;
+  color: #681818;
+  padding: 1.3rem 3.5rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#game-container {
+  position: relative;
+  display: flex;
+  width: 110rem;
+  justify-content: center;
+}
+
+#score {
+  position: absolute;
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  left: 0.5%;
+  top: 0%;
+}
+
+#controller {
+  position: absolute;
+  height: 20rem;
+  top: 98%;
+  left: 99%;
+  transform: translate(-100%, -100%);
+  width: 20rem;
+}
+
+.control-btn {
+  border: none;
+  outline: none;
+  height: 5.5rem;
+  width: 5.5rem;
+  position: absolute;
+  backdrop-filter: blur(60px);
+  opacity: 0.4;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#left {
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#right {
+  right: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#up {
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
+}
+#down {
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(-50%);
+}
+
+.control-btn img {
+  height: 100%;
+  width: 100%;
+}
+
+#canvas {
+  background: #444444e0;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+@media (max-height: 580px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-height: 330px) {
+  html {
+    font-size: 5%;
+  }
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 850px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media (max-width: 670px) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 25%;
+  }
+}
+
+@media (max-width: 470px) {
+  html {
+    font-size: 20%;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 15%;
+  }
+}
